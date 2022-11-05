@@ -10,3 +10,14 @@ hamburger.addEventListener("click", () => {
 close.addEventListener("click", () => {
   menu.classList.remove("show");
 });
+
+// фрагменты JavaScript, чтобы скрыть и показать всплывающее окно входа в систему
+const signInForm = document.querySelector('header .wrapper');
+
+document.querySelector('.signin').onclick = () =>{
+  signInForm.classList.add('active');
+};
+
+document.querySelector('.close-form').onclick = () =>{
+  signInForm.classList.remove('active');
+};
